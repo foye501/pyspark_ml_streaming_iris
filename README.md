@@ -2,7 +2,7 @@
 Example of combining spark.ml and structured-streaming
 
 Model training is a batch process.
-However inference (model.transform) - is something is done in real-time.
+However inference (model.transform) - is done in real-time.
 In spark.ml model.transform(df) can be used on ANY df - that is
 on a DataFrame which is bounded and also on a DataFrame which is unbounded.
 
