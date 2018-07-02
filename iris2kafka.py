@@ -1,15 +1,15 @@
-# simulate web-logs from server being pushed into a Kafka queue
+#
+# python 2.7 program to push random lines from the iris dataset into Kafka
+# Written by Tal Franji
+# Code is free for all usage - feel free to copy and use.
 from kafka import KafkaConsumer
 from kafka import KafkaProducer
-import datetime
-import math
 import random
 import sys
 import time
 
-# running on 34.252.218.48 (internal 172.31.6.169) at April 2017
 # need to install:
-# $sudo pip install kafka-python
+#$ sudo pip install kafka-python
 
 iris_csv = "./iris.csv"
 kafka_topic = 'wwwlog'
